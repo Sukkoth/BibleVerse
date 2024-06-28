@@ -3,7 +3,7 @@ import BottomNavItem from "./BottomNavItem";
 function BottomNav() {
   return (
     <nav
-      className='absolute flex items-center justify-around bottom-0 inset-x-0 bg-stone-800 px-5 py-3'
+      className='absolute flex items-center justify-around bottom-0 inset-x-0 bg-stone-800 px-5 py-1'
       id='bottom-nav'
     >
       <BottomNavItem
