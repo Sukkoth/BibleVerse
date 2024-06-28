@@ -1,3 +1,7 @@
 .center-all {
   @apply flex items-center justify-center;
 }
+
+#bottom-nav .active {
+  @apply brightness-100;
+}

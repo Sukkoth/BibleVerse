@@ -5,15 +5,22 @@ import Intro from "./pages/Intro";
 
 import "./App.css";
 import Login from "./pages/Login";
+import BottomNavLayout from "./Layouts/BottomNavLayout";
+import Stats from "./pages/Stats";
+import Account from "./pages/Account";
 
 function App() {
   return (
     <Routes>
       <Route element={<MainLayout />}>
-        <Route path='/' element={<Home />} />
-        <Route path='/intro' element={<Intro />} />
-        <Route path='/register' element={<Login />} />
+        <Route element={<BottomNavLayout />}>
+          <Route index element={<Home />} />
+          <Route path='stats' element={<Stats />} />
+          <Route path='account' element={<Account />} />
+        </Route>
       </Route>
+      <Route path='/intro' element={<Intro />} />
+      <Route path='/register' element={<Login />} />
     </Routes>
   );
 }
